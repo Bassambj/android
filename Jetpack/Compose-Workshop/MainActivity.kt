@@ -71,3 +71,29 @@ fun NameList(names: List<String>,modifier: Modifier = Modifier){
         }
     }
 }
+
+
+@Composable
+fun Counter(count: Int, updateCount: (Int) -> Unit){
+    Button(onClick = { updateCount(count+1) }) {
+        Text(text = "I´ve been clicked $count times")
+    }
+}
+
+@Composable
+fun Greeting(name: String) {
+    Surface(color = androidx.compose.ui.graphics.Color.Yellow) {
+        Text(text = "Hello $name!")
+    }
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun DefaultPreview() {
+    ComposeBasicsTheme {
+        MyScreenContent()
+    }
+}
+
+
