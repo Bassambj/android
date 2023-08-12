@@ -46,8 +46,7 @@ fun Start() {
                         "\nThe combustion spoon is on? ${CombustionSpoon.burningSpoon}"+
                         "\nThe dropper have $x units" +
                         "\nThe microscope is set to ${Microscope.zoom} zoom. "
-                        
-
+                
             }) {
                 Text(text)
             }
@@ -56,4 +55,4 @@ fun Start() {
 }
 
 //project in development
-// coming soon ;)
+// coming soon ;
